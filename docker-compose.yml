@@ -1,0 +1,27 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - broom_data:/app
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - Admin__Email=gm@broomservices.qa
+      - Admin__Password=ChangeThisPasswordNow123!
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  broom_data:

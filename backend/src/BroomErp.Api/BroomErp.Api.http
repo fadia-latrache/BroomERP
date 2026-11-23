@@ -1,0 +1,6 @@
+@BroomErp.Api_HostAddress = http://localhost:5270
+
+GET {{BroomErp.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

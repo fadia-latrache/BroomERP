@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BroomErp.Api/BroomErp.Api.csproj" />
+    <Project Path="src/BroomErp.Application/BroomErp.Application.csproj" />
+    <Project Path="src/BroomErp.Domain/BroomErp.Domain.csproj" />
+    <Project Path="src/BroomErp.Infrastructure/BroomErp.Infrastructure.csproj" />
+  </Folder>
+</Solution>

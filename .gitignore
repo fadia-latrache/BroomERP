@@ -1,0 +1,22 @@
+# .NET
+bin/
+obj/
+*.db
+*.db-shm
+*.db-wal
+appsettings.Development.json
+*.user
+*.suo
+
+# Node & Angular
+node_modules/
+dist/
+.angular/
+npm-debug.log
+yarn-error.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
